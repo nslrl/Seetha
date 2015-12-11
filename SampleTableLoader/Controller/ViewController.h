@@ -11,14 +11,15 @@
 @interface ViewController : UIViewController
 {
     ConnectionManager*          mConnectionManager; // Manages the Service calls
-    UIActivityIndicatorView*    activityIndicator;
 }
 
-@property(strong, nonatomic) UIRefreshControl*  mRefreshControl; // Refresh controll, which will do the pull down activity
-@property(strong, nonatomic) LoadTableView*     mTblListView; // Tableview
+@property(strong, nonatomic) UIActivityIndicatorView*       activityIndicator; // Loading indication
+@property(strong, nonatomic) UIRefreshControl*              mRefreshControl; // Refresh controll, which will do the pull down activity
+@property(strong, nonatomic) LoadTableView*                 mTblListView; // Tableview
 
 -(void) reloadTableData;
 -(void) loadActivityIndicator;
+-(void) startActivityIndicator;
 -(void) stopActivityIndicator;
 -(void) adjustActivityIndicator;
 

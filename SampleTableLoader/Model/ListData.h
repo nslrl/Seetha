@@ -2,7 +2,6 @@
 //  Created by Seetha on 09/12/15.
 
 #import <Foundation/Foundation.h>
-#import <Foundation/NSString.h>
 #import <UIKit/UIKit.h>
 
 @interface ListData : NSObject

@@ -11,8 +11,7 @@
  Here handled the tableview delegates and tableviewdatasource
 */
 
-#pragma mark TableView Delegate
-
+#pragma mark TableView DataSource
 // Returing Number of Rows in tableview
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -87,11 +86,21 @@
     return cell;
 }
 
+#pragma mark TableView Delegate
 // Returing cell's height based on the description
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [self getHeightForRow:indexPath.row] + cellSpace;
 }
+
+#pragma mark RableView Height Calculation
+
+/*
+ @method        getHeightForRow
+ @abstract      calulating and retuning table cell's height based on description content
+ @param         NSInteger
+ @return        CGFloat
+ */
 
 -(CGFloat) getHeightForRow:(NSInteger) row
 {

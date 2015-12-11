@@ -6,7 +6,7 @@
 
 @interface ListDataController : NSObject
 
-// Hold the JSON data to display it in Tabelview
+// Holds the JSON data to display it in Tabelview
 @property (strong, nonatomic) NSMutableArray* mDataList;
 
 -(void) saveData:(NSString*) title description:(NSString*) description imgUrl:(NSString *) imgUrl;

@@ -4,11 +4,30 @@
 #import "ListDataController.h"
 
 @implementation ListDataController
-
 /*
  This class maintains the JSON data
  Going to save parsed JSON data into cusom list
-*/
+ */
+
+-(id) init
+{
+    self = [super init];
+    
+    if( self )
+    {
+        if( self.mDataList == 0x0 )
+            self.mDataList = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
+
+/*
+ @method        saveData
+ @abstract      save the received JSON datas to custom list
+ @param         NSString
+ @return        void
+ */
 
 -(void) saveData:(NSString*) title description:(NSString*) description imgUrl:(NSString *) imgUrl
 {
@@ -22,9 +41,6 @@
                 return;
         }
     }
-    
-    if( self.mDataList == 0x0 )
-        self.mDataList = [[NSMutableArray alloc] init];
     
     ListData *data      = [[ListData alloc] init];
     data.mTitle         = title;

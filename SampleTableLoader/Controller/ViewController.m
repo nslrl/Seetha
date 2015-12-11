@@ -24,6 +24,7 @@
     [self createConnectionManager];
     [self loadTableView];
     [self loadActivityIndicator];
+    [self.view setUserInteractionEnabled:NO];
     [super viewDidLoad];
 }
 
@@ -33,32 +34,39 @@
     [self doDownloadProcess];
 }
 
+-(void) createConnectionManager
+{
+    // Creating connection manager object
+    if( mConnectionManager == 0x0 )
+        mConnectionManager = [[ConnectionManager alloc] init];
+}
+
+#pragma mark Activity Indication
 -(void) loadActivityIndicator
 {
     // Adding activity indicator to the main view
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [self.view addSubview:activityIndicator];
-    activityIndicator.color = [UIColor blackColor];
+    if( self.activityIndicator == 0x0 )
+        self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    
+    [self.view addSubview:self.activityIndicator];
+    self.activityIndicator.color = [UIColor blackColor];
 }
 
 -(void) stopActivityIndicator
 {
     // Stops the loading indicator process
-    if( activityIndicator != 0x0 )
-    {
-        activityIndicator.hidden = TRUE;
-        [activityIndicator stopAnimating];
-    }
+    [self.view setUserInteractionEnabled:YES];
+
+    if( self.activityIndicator != 0x0 )
+        [self.activityIndicator stopAnimating];
 }
 
 -(void) startActivityIndicator
 {
     // Starting loading indicator process
-    if( activityIndicator != 0x0 )
+    if( self.activityIndicator != 0x0 )
     {
-        [self.view bringSubviewToFront:activityIndicator];
-        activityIndicator.hidden = FALSE;
-        [activityIndicator startAnimating];
+        [self.activityIndicator startAnimating];
         [self adjustActivityIndicator];
     }
 }
@@ -66,16 +74,17 @@
 -(void) adjustActivityIndicator
 {
     // Activity indicator frame adjustment during orientation
-    if( (activityIndicator != 0x0) && ([activityIndicator isAnimating]) )
-        activityIndicator.center = self.view.center;
+    if( (self.activityIndicator != 0x0) && ([self.activityIndicator isAnimating]) )
+        self.activityIndicator.center = self.view.center;
 }
 
--(void) createConnectionManager
-{
-    // Creating connection manager object
-    if( mConnectionManager == 0x0 )
-        mConnectionManager = [[ConnectionManager alloc] init];
-}
+#pragma mark Download Process
+/*
+ @method        doDownloadProcess
+ @abstract      get the JSON data from the server
+ @param         nil
+ @return        void
+ */
 
 -(void) doDownloadProcess
 {
@@ -99,6 +108,15 @@
     }
 }
 
+#pragma mark Tableview Loader
+
+/*
+ @method        loadTableView
+ @abstract      adding tableview in to the main view
+ @param         nil
+ @return        void
+ */
+
 -(void) loadTableView
 {
     // Adding Tableview into main view
@@ -120,12 +138,27 @@
     [self.mTblListView addSubview:self.mRefreshControl];
 }
 
+/*
+ @method        reloadTableData
+ @abstract      refreshing table content
+ @param         nil
+ @return        void
+ */
+
 -(void) reloadTableData
 {
     // Going to relaod the table data
     if( self.mTblListView != 0x0 )
         [self.mTblListView reloadData];
 }
+
+#pragma mark Pulldown process
+/*
+ @method        didChangedRefreshConrol
+ @abstract      get the updated data from the server
+ @param         UIRefreshControl
+ @return        void
+ */
 
 -(void) didChangedRefreshConrol:(UIRefreshControl *) refreshControl
 {

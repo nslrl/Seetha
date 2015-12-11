@@ -48,6 +48,11 @@
     XCTAssertFalse([subviews containsObject:self.mTestViewController.self.mRefreshControl], @"Refresh control not added");
 }
 
+-(void)testActivityInitiated
+{
+    XCTAssertFalse(self.mTestViewController.self.activityIndicator, @"Loading indication not created");
+}
+
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");

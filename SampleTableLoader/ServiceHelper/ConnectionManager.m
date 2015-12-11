@@ -9,14 +9,22 @@
 /* This class maintains the servicecalls */
 
 #pragma mark servicecalls
+
+/*
+ @method        startDownload
+ @abstract      downloading JSON data from the URL
+ @param         nil
+ @return        void
+ */
+
 -(void) startDownload
 {
     // Downloading JSON data from the URL
     // In Download response, saving JSON data into array and then switching to UI therad to refresh the UI.
 
-    NSString *urlString         = serviceUrl;
-    NSURLRequest *urlRequest    = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
-    NSURLSession *session       = [NSURLSession sharedSession];
+    NSString* urlString         = serviceUrl;
+    NSURLRequest* urlRequest    = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    NSURLSession* session       = [NSURLSession sharedSession];
     
     [[session dataTaskWithRequest:urlRequest
             completionHandler:^(NSData *data,
@@ -38,7 +46,7 @@
             }
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [[AppDelegate sharedObj] reloadDataOnResponse];
+                [[AppDelegate sharedObj] onServiceCallResponse];
             });
         }
     }] resume];

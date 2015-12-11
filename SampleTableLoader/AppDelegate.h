@@ -17,7 +17,7 @@
 @property (strong, nonatomic) ListDataController*    mListDataController; // Maintains the JSON data
 
 +(AppDelegate*) sharedObj; // Getting Appdelegate instance
--(void) reloadDataOnResponse; // Reloading UI on service callback
+-(void) onServiceCallResponse; // Reloading UI on service callback
 
 @end
 

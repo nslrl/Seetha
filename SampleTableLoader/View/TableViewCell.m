@@ -7,6 +7,13 @@
 
 /* This class prepares the cells */
 
+/*
+ @method        initWithStyle
+ @abstract      preparing tableview cells
+ @param         NSString
+ @return        void
+ */
+
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -36,6 +43,13 @@
     
     return self;
 }
+
+/*
+ @method        layoutSubviews
+ @abstract      adjusting cell's frame
+ @param         nil
+ @return        void
+ */
 
 - (void)layoutSubviews
 {

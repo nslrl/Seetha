@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		64130AD61C1988C7007B621C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AD51C1988C7007B621C /* Reachability.m */; };
 		64130AEB1C198EA3007B621C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AD91C198EA3007B621C /* ViewController.m */; };
-		64130AEC1C198EA3007B621C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130ADC1C198EA3007B621C /* AppDelegate.m */; };
 		64130AED1C198EA3007B621C /* ListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AE01C198EA3007B621C /* ListData.m */; };
 		64130AEE1C198EA3007B621C /* ListDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AE21C198EA3007B621C /* ListDataController.m */; };
-		64130AEF1C198EA3007B621C /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AE51C198EA3007B621C /* ConnectionManager.m */; };
 		64130AF01C198EA3007B621C /* LoadTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AE81C198EA3007B621C /* LoadTableView.m */; };
 		64130AF11C198EA3007B621C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64130AEA1C198EA3007B621C /* TableViewCell.m */; };
+		644636581C1AD00A00787979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 644636561C1AD00A00787979 /* AppDelegate.m */; };
+		6446365E1C1AD05400787979 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6446365D1C1AD05400787979 /* ConnectionManager.m */; };
 		64E3482E1C17F50D00B3E981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E3482D1C17F50D00B3E981 /* main.m */; };
 		64E348391C17F50D00B3E981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E348381C17F50D00B3E981 /* Images.xcassets */; };
 		64E348481C17F50D00B3E981 /* SampleTableLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E348471C17F50D00B3E981 /* SampleTableLoaderTests.m */; };
@@ -37,19 +37,19 @@
 		64130AD51C1988C7007B621C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		64130AD81C198EA3007B621C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		64130AD91C198EA3007B621C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		64130ADB1C198EA3007B621C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		64130ADC1C198EA3007B621C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		64130ADD1C198EA3007B621C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		64130ADF1C198EA3007B621C /* ListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListData.h; sourceTree = "<group>"; };
 		64130AE01C198EA3007B621C /* ListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListData.m; sourceTree = "<group>"; };
 		64130AE11C198EA3007B621C /* ListDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDataController.h; sourceTree = "<group>"; };
 		64130AE21C198EA3007B621C /* ListDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDataController.m; sourceTree = "<group>"; };
-		64130AE41C198EA3007B621C /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
-		64130AE51C198EA3007B621C /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
 		64130AE71C198EA3007B621C /* LoadTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadTableView.h; sourceTree = "<group>"; };
 		64130AE81C198EA3007B621C /* LoadTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadTableView.m; sourceTree = "<group>"; };
 		64130AE91C198EA3007B621C /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		64130AEA1C198EA3007B621C /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		644636561C1AD00A00787979 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		644636571C1AD00A00787979 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6446365A1C1AD01800787979 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6446365C1C1AD05400787979 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		6446365D1C1AD05400787979 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
 		64E348281C17F50D00B3E981 /* SampleTableLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTableLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E3482C1C17F50D00B3E981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E3482D1C17F50D00B3E981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,16 +99,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		64130ADA1C198EA3007B621C /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				64130ADB1C198EA3007B621C /* AppDelegate.h */,
-				64130ADC1C198EA3007B621C /* AppDelegate.m */,
-				64130ADD1C198EA3007B621C /* Constants.h */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		64130ADE1C198EA3007B621C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +108,6 @@
 				64130AE21C198EA3007B621C /* ListDataController.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		64130AE31C198EA3007B621C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				64130AE41C198EA3007B621C /* ConnectionManager.h */,
-				64130AE51C198EA3007B621C /* ConnectionManager.m */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		64130AE61C198EA3007B621C /* View */ = {
@@ -139,6 +120,25 @@
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		644636591C1AD01800787979 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6446365A1C1AD01800787979 /* Constants.h */,
+			);
+			name = Common;
+			path = SampleTableLoader/Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		6446365B1C1AD05400787979 /* ServiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6446365C1C1AD05400787979 /* ConnectionManager.h */,
+				6446365D1C1AD05400787979 /* ConnectionManager.m */,
+			);
+			name = ServiceHelper;
+			path = SampleTableLoader/ServiceHelper;
+			sourceTree = SOURCE_ROOT;
 		};
 		64E3481F1C17F50D00B3E981 = {
 			isa = PBXGroup;
@@ -161,11 +161,13 @@
 		64E3482A1C17F50D00B3E981 /* SampleTableLoader */ = {
 			isa = PBXGroup;
 			children = (
+				644636571C1AD00A00787979 /* AppDelegate.h */,
+				644636561C1AD00A00787979 /* AppDelegate.m */,
 				64130ADE1C198EA3007B621C /* Model */,
 				64130AE61C198EA3007B621C /* View */,
 				64130AD71C198EA3007B621C /* Controller */,
-				64130ADA1C198EA3007B621C /* Helper */,
-				64130AE31C198EA3007B621C /* Service */,
+				644636591C1AD01800787979 /* Common */,
+				6446365B1C1AD05400787979 /* ServiceHelper */,
 				64130AD31C1988C7007B621C /* Reachability */,
 				64E348381C17F50D00B3E981 /* Images.xcassets */,
 				64E3482B1C17F50D00B3E981 /* Supporting Files */,
@@ -299,14 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64130AEC1C198EA3007B621C /* AppDelegate.m in Sources */,
+				6446365E1C1AD05400787979 /* ConnectionManager.m in Sources */,
 				64130AEB1C198EA3007B621C /* ViewController.m in Sources */,
 				64130AD61C1988C7007B621C /* Reachability.m in Sources */,
+				644636581C1AD00A00787979 /* AppDelegate.m in Sources */,
 				64130AEE1C198EA3007B621C /* ListDataController.m in Sources */,
 				64130AF11C198EA3007B621C /* TableViewCell.m in Sources */,
 				64130AED1C198EA3007B621C /* ListData.m in Sources */,
 				64130AF01C198EA3007B621C /* LoadTableView.m in Sources */,
-				64130AEF1C198EA3007B621C /* ConnectionManager.m in Sources */,
 				64E3482E1C17F50D00B3E981 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -415,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SampleTableLoader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SampleTableLoader/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

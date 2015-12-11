@@ -13,15 +13,15 @@
 @end
 
 /*
- This class will holds the object ListDataController. So we can access JSON data easity though this object
+ This class will holds the object ListDataController. So we can access JSON data easity through this object
  ListDataController class will manage the JSON data
-*/ 
+ */
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // Going to create object for ConnectionManager and ListDataController
+    // Going to create object for ListDataController
     [self createListDataController];
 
     // Adding notication to get the orientation callback
@@ -39,7 +39,7 @@
 
 -(void) createListDataController
 {
-    // creating object for the ListDataController, which will manages the JSON data
+    // Creating object for the ListDataController, which will manage the JSON data
     if( self.mListDataController == 0x0 )
         self.mListDataController = [[ListDataController alloc] init];
 }
@@ -50,7 +50,14 @@
     return (AppDelegate*)[[UIApplication sharedApplication] delegate];
 }
 
--(void) reloadDataOnResponse
+/*
+ @method        onServiceCallResponse
+ @abstract      refresh the table data on success of service callback
+ @param         nil
+ @return        void
+ */
+
+-(void) onServiceCallResponse
 {
     // On success of download process, we are reloading table content
     if( mViewController != 0x0 )
@@ -59,6 +66,13 @@
         [mViewController reloadTableData];
     }
 }
+
+/*
+ @method        didOrientationChanged
+ @abstract      Adjusing frames during orientation changes
+ @param         NSNotification
+ @return        void
+ */
 
 - (void) didOrientationChanged:(NSNotification *) notification
 {
